@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI poem generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>AI English poem generator</h1>
-      <header></header>
+      <header><h1>AI English poem generator</h1></header>
+
       <main>
-        <form>
+        <form id="form-generator">
           <input
             type="text"
             placeholder="Enter the topic of the English poem"
@@ -22,11 +23,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The poem will go here
-          <br />
-          The poem will go here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
@@ -44,7 +41,7 @@
           >Netlify</a
         >
       </footer>
-      <script src="src/index.js"></script>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
