@@ -12,19 +12,22 @@
     <div class="container">
       <header><h1>AI English poem generator</h1></header>
       <main>
-        <form id="form-generator">
-          <input
-            type="text"
-            placeholder="Enter the topic of the English poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="form-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic of the English poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small>i.e: Flower, Love New York, dogs</small>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
